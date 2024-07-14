@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>K~FASHION ATELIER</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/icons/favicon.ico" rel="icon"> 
+  <link href="img/icons/favicon.ico" rel="logo">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Toolbar Styles */
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .toolbar button,
+    .toolbar label,
+    .toolbar input,
+    .toolbar select {
+      margin: 5px;
+    }
+
+    .toolbar button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #3f4041;
+      color: white;
+      cursor: pointer;
+    }
+
+    .toolbar button:hover {
+      background-color: #3f4041;
+    }
+
+    .toolbar input[type="color"],
+    .toolbar input[type="range"],
+    .toolbar select {
+      padding: 5px;
+    }
+
+    .toolbar input[type="range"] {
+      width: 100px;
+    }
+
+    /* Canvas Styles */
+    canvas {
+      border: 1px solid #ddd;
+      background-color: #fff;
+      width: 100%;
+      max-width: 800px;
+      height: 800px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .section-title h2 {
+        font-size: 2em;
+      }
+
+      .section-title p {
+        font-size: 1em;
+      }
+
+      .toolbar button,
+      .toolbar label,
+      .toolbar input,
+      .toolbar select {
+        margin: 5px 0;
+      }
+
+      .toolbar input[type="range"] {
+        width: 80px;
+      }
+
+      canvas {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-title h2 {
+        font-size: 1.8em;
+      }
+
+      .section-title p {
+        font-size: 0.9em;
+      }
+
+      .toolbar input[type="range"] {
+        width: 70px;
+      }
+
+      canvas {
+        height: 600px;
+      }
+    }
+  </style>
+  
+</head>
+
+<body>
+  
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  
+  
+ <!-- ======= Header ======= -->
+ <header id="header">
+  <div class="d-flex flex-column">
+
+    
+    <nav id="navbar" class="nav-menu navbar">
+      <ul>
+        <li><a href="index.html" class="nav-link scrollto active"><i class="bi bi-house"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bi bi-people"></i> <span>About</span></a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-basket"></i> <span>Shop</span></a>
+            
+          <ul class="dropdown-menu dropdown-menu-dark" style="color:goldenrod ;">
+        
+            <li><a class="dropdown-item" href="shopwomen.html">WOMEN</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="shopmen.html">Men</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="assesories.html">Assesories</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#"></a></li>
+            </li></ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-calendar2-week"></i> <span>Catalog</span></a>
+                
+              <ul class="dropdown-menu dropdown-menu-dark" style="color:goldenrod ;">
+            
+                <li><a class="dropdown-item" href="catalogw.html">Women</a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" href="catalogm.html">Men</a></li>
+                </li></ul>
+              <li><a href="#" class="nav-link scrollto"><i class="bi bi-square"></i> <span>Fabrics</span></a></li>
+              <li><a href="sketch.html" class="nav-link scrollto"><i class="bi bi-person-standing-dress"></i> <span>Sketch</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bi bi-server"></i> <span>Services</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+  </div>
+</header><!-- End Header -->
+
+    
+
+  <nav class="navbarr">
+    <div class="logo"><img src="img/icons/klogo.png" alt="Logo"></div>
+    <div class="navbarr-cart"  role="button" data-bs-toggle="dropdown" ><i class="bi bi-cart4">
+      <span class="shop-count pink"style="color:goldenrod">2</span></i></div>
+  </nav>
+  <main id="main">
+  
+
+
+  <section id="sketch" >
+    <div class="container ">
+
+      <div class="section-title">
+        <h2>SketchPad</h2>
+        <p>Magnam dol qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+  
+      <div class="row" data-aos="fade-in">
+        
+          <div class="toolbar">
+            <button id="clear">Clear</button>
+            <label for="colorPicker">Color:</label>
+            <input type="color" id="colorPicker" value="#000000">
+            <label for="lineWidth">Line Width:</label>
+            <input type="range" id="lineWidth" min="1" max="10" value="2">
+            <label for="tool"></label>
+            <select id="tool">
+                <option value="pencil">Pencil</option>
+                <option value="eraser">Eraser</option>
+            </select>
+            <button id="save">Save</button>
+
+        </div>
+        <canvas id="sketchPad" ></canvas>
+          </div>
+              
+              
+              
+    </section><!-- End Catalog Section -->
+
+</main>
+     <!-- ======= Footer ======= -->
+     <footer id="footer">
+      <footer class="footer-area">
+        <div class="footer-top-area bg-img pt-105 pb-65" style="background-image: url(assets/img/bg/1.jpg)" data-overlay="9" data-aos-delay="fade-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-3">
+                        <div class="footer-widget mb-40">
+                            <h3 class="footer-widget-title"> Services</h3>
+                            <div class="footer-widget-content">
+                                <ul>
+                                    <li><a href="cart.html">Custmized Denim</a></li>
+                                    <li><a href="register.html">Fast Deliveries</a></li>
+                                    <li><a href="login.html">Trainings</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-3">
+                        <div class="footer-widget mb-40">
+                            <h3 class="footer-widget-title">Categories</h3>
+                            <div class="footer-widget-content">
+                                <ul>
+                                    <li><a href="shop.html">Men's Catalog</a></li>
+                                    <li><a href="shop.html">Women's Catalog</a></li>
+                                    <li><a href="shop.html">Shop by Women</a></li>
+                                    <li><a href="shop.html">Shop by Men</a></li>
+                                    <li><a href="shop.html">Assesories</a></li>
+                                    <li><a href="shop.html">Fabrics</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="footer-widget mb-40">
+                            <h3 class="footer-widget-title">Subscribe to our Newsletters</h3>
+                            <div class="footer-newsletter">
+                                <p>Be the first to hear about our future promotions,new products<br>Discounts and more...</p>
+                                <div id="mc_embed_signup" class="subscribe-form pr-40">
+                                    <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll" class="mc-form">
+                                            <input type="email" value="" name="EMAIL" class="email" placeholder="Enter Your E-mail" required>
+                                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                            <div class="mc-news" aria-hidden="true">
+                                                <input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value="">
+                                            </div>
+                                            <div class="clear">
+                                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <span>K-Fashion Atelier</span>
+        </div>
+        <div class="credits">
+          Designed by <a href="#">MAE</a>
+        </div>
+      </div>
+    </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/waypoints/lib/jquery.waypoints.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+   var swiper = new Swiper('.swiper', {
+     speed: 600,
+   loop: true,
+   autoplay: {
+     delay: 5000,
+     disableOnInteraction: false
+   },
+   slidesPerView: 'auto',
+   pagination: {
+     el: '.swiper-pagination',
+     type: 'bullets',
+     clickable: true
+   },
+   breakpoints: {
+     320: {
+       slidesPerView: 1,
+       spaceBetween: 20
+     },
+
+     1200: {
+       slidesPerView: 3,
+       spaceBetween: 20
+     }
+   }
+   });
+
+  
+ });
+
+ AOS.init({
+     duration: 1000,
+     easing: 'ease-in-out',
+     once: true,
+     mirror: false
+   });
+   </script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
